@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>licao-JS5</title>
+</head>
+<body>
+     <h1>formulario1 exercicio 5</h1>
+     <p>
+        Faça um programa que leia 10 valores informados pelo usuário, calcule, exiba os números informados e escreva a média aritmética desses valores lidos.
+     </p>
+     <script>
+        let valor1 = parseFloat(prompt("usuaro, por favor insira o primeiro valor: "))
+        let valor2 = parseFloat(prompt("agora insira o segundo valor por favor: "))
+        let valor3 = parseFloat(prompt("agora insira o terceiro valor por favor: "))
+        let valor4 = parseFloat(prompt("agora insira o quarto valor por favor: "))
+        let valor5 = parseFloat(prompt("agora insira o quinto valor por favor: "))
+        let valor6 = parseFloat(prompt("agora insira o sexto valor por favor: "))
+        let valor7 = parseFloat(prompt("agora insira o setimo valor por favor: "))
+        let valor8 = parseFloat(prompt("agora insira o oitavo valor por favor: "))
+        let valor9 = parseFloat(prompt("agora insira o nono valor por favor: "))
+        let valor10 = parseFloat(prompt("agora insira o decimo valor por favor: "))
+
+        let media = ((valor1 + valor2 + valor3 + valor4 + valor5 + valor6 + valor7 + valor8 + valor9 + valor10)/10)
+
+        document.write("a media aritimetica dos valores selecionados é igual á: "+media)
+     </script>
+</body>
+</html>
