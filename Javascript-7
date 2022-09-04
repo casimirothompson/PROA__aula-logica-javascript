@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>licao-JS7</title>
+</head>
+<body>
+    <!--
+        Faça um programa que leia 6 números que o usuário vai informar. Todos os números lidos com valor inferior a 72 devem ser somados. Escreva o valor final da soma efetuada e também todos valores que o usuário informou.
+        
+        usuario insere n1
+        usuario insere n2
+        usuario insere n3
+        usuario insere n4
+        usuario insere n5
+        usuario insere n6
+        se numero 1 for menor que 72, ele sera somado.
+    -->
+    <h1>formulario1 questao 7</h1>
+    <p>
+        Faça um programa que leia 6 números que o usuário vai informar.<br>
+        Todos os números lidos com valor inferior a 72 devem ser somados.<br>
+        Escreva o valor final da soma efetuada e também todos valores que o usuário informou.<br>
+    </p>
+    <script>
+        let n1 = parseInt(prompt("por favor, insira o primeiro numero: "))
+        let n2 = parseInt(prompt("agora insira o segundo numero: "))
+        let n3 = parseInt(prompt("agora insira o terceiro numero: "))
+        let n4 = parseInt(prompt("agora insira o quarto numero: "))
+        let n5 = parseInt(prompt("agora insira o quinto numero: "))
+        let n6 = parseInt(prompt("agora insira o sexto numero: "))
+
+        let soma = 0+0+0;
+
+        if(n1<72){
+            soma += n1
+        }else{n1 == 0}
+        if(n2<72){
+            soma += n2
+        }else{n2 == 0}
+        if(n3<72){
+            soma +=n3
+        }else{n3 == 0}
+        if(n4<72){
+            soma += n4
+        }else{n4 == 0}
+        if(n5<72){
+            soma += n5
+        }else{n5 == 0}
+        if(n6<72){
+            soma +=n6
+        }else{n6 == 0}
+
+        document.write("o usuario inseriu os valores: "+n1+", "+n2+", "+n3+", "+n4+", "+n5+", "+n6+"<br>")
+        document.write("a soma dos numeros que tem valor menor que 72, pe igual á: "+soma)
+    </script>
+</body>
+</html>
