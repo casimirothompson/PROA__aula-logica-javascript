@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>licao-JS9</title>
+</head>
+<body>
+    <!--Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que diga se ela poderá ou não votar este ano (não é necessário considerar o mês em que ela nasceu)
+    usuario colocar ano de nascimento.
+    substrair ano de nascimento - 2022 = idade
+    se idade for menor de 15, nao pode votar
+    es idade for entre 15 a 17, voto opcional
+    se idade for maior ou igual a 18, obrigatorio votar.
+    -->
+    <h1>formulario1 exercicio 9</h1>
+    <p>
+        Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que diga se ela poderá ou não votar este ano (não é necessário considerar o mês em que ela nasceu)
+    </p>
+    <script>
+        let AnoDeNascimento = parseInt(prompt("por favor insira o seu ano de nascimento:"))
+        let IdadeParaVotar = (2022 - AnoDeNascimento)
+
+        if(IdadeParaVotar <15){
+            document.write("você tem "+IdadeParaVotar+" anos ,voce nao tem idade para votar")
+        }else if(IdadeParaVotar <=17){
+            document.write("você tem "+IdadeParaVotar+" anos ,seu voto é opcional.")
+        }else if(IdadeParaVotar >=18){
+            document.write("você tem "+IdadeParaVotar+" anos ,seu voto é obrigatorio")
+        }else if(IdadeParaVotar >=70){
+            document.write("você tem "+IdadeParaVotar+" anos ,seu voto voltou a ser obrigatorio")
+        };
+    </script>
+</body>
+</html>
