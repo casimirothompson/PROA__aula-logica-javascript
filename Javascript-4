@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>licao4</title>
+</head>
+<body>
+     <h1>Formulario 1 questao 4</h1>
+     <p>
+        Faça um programa que leia dois valores informados pelo usuário e exiba uma das três mensagens a seguir: ‘Números iguais’, caso os números sejam iguais ‘Primeiro é maior’, caso o primeiro seja maior que o segundo; ‘Segundo maior’, caso o segundo seja maior que o primeiro.
+     </p>
+
+     <script>
+        let n1 = parseFloat(prompt("por favor insira o primeiro numero: "));
+        let n2 = parseFloat(prompt("por favor insira o segundo numero: "))
+
+        if(n1 == n2){
+            document.write("o numero "+n1+" e "+n2+" são numeros iguais")
+        }else if(n1> n2){
+            document.write("o numero "+n1+" é maior que o numero "+n2)
+        }else{
+            document.write("o numero "+n2+" é maior que o numero "+n1)
+        }
+     </script>
+</body>
+</html>
