@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>licao-JS8</title>
+</head>
+<body>
+    <!-- 
+        Escreva um programa que calcule a média de quatro números informados pelo usuário, mas somente se esses números forem maiores que 0 e menores que 10. No final, se a média for maior que cinco o usuário receberá uma mensagem "Você passou no teste". Em qualquer outra situação, ele receberá uma mensagem de "tente novamente"
+        usuario insere valor 1
+        usuario insere valor 2
+        usuario insere valor 3
+        usuario insere valor 4
+        se numero 1 for maior que 0 e menor que 10, entra na soma, senao, é igual a 0.
+        se numero 2 for maior que 0 e menor que 10, entra na soma, senao, é igual a 0.
+        se numero 3 for maior que 0 e menor que 10, entra na soma, senao, é igual a 0.
+        se numero 4 for maior que 0 e menor que 10, entra na soma, senao, é igual a 0.
+        media é a soma de todos divido por 4.
+        se media for maior que 5, escreva parabens
+        senao, fale, tente novamente.
+    -->
+
+    <script>
+        let n1 = parseInt(prompt("digite o primeiro numero por favor: "));
+        let n2 = parseInt(prompt("agora digite o segundo nuemro aqui:"));
+        let n3 = parseInt(prompt("agora digite o terceiro nuemro aqui:"));
+        let n4 = parseInt(prompt("agora digite o quarto nuemro aqui:"));
+        let soma = 0;
+        let media = (soma/4)
+
+        if(n1 >= 0 && n1 <= 10){
+            soma = soma + n1
+        };
+        if(n2 >= 0 && n2 <= 10){
+            soma = soma + n2
+        };
+        if(n3 >= 0 && n3 <= 10){
+            soma = soma + n3
+        };
+        if(n4 >= 0 && n4 <= 10){
+            soma = soma + n4
+        };
+        if((soma/4)>=5){
+            document.write("sua media é "+soma/4+" ,você passou no teste")
+        }else{
+            document.write("sua media é "+soma/4+" ,tente novamente.")
+        }
+    </script>
+</body>
+</html>
